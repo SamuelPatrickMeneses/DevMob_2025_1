@@ -1,0 +1,16 @@
+lists/**/node_modules/   
+lists/**/.expo/
+lists/**/dist/
+lists/**/web-build/
+lists/**/expo-env.d.ts
+lists/**/*.orig.*
+lists/**/*.jks
+lists/**/*.p8
+lists/**/*.p12
+lists/**/*.key
+lists/**/*.mobileprovision
+lists/**/npm-debug.*
+lists/**/yarn-debug.*
+lists/**/yarn-error.*
+lists/**/*.tsbuildinfo
+lists/**/.env*.local
