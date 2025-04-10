@@ -14,3 +14,6 @@ lists/**/yarn-debug.*
 lists/**/yarn-error.*
 lists/**/*.tsbuildinfo
 lists/**/.env*.local
+lists/**/android/
+lists/**/ios/
+lists/**/.idea/

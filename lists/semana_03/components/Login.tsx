@@ -4,28 +4,29 @@ import { Button, StyleSheet, TextInput, View } from 'react-native';
 export default function Login() {
     const [name, useName] = useState("");
     const [pass, usePass] = useState("");
+    const onPress = () => console.log(`button presed: {\nname: ${name},\n pass: ${pass}\n}`);
     console.log(`text changed {\nname: ${name},\n pass: ${pass}\n}`);
-  return (
-    <View style={styles.container}  >
-        <TextInput 
-            style={styles.ti}
-            value={name}
-            onChangeText={useName}
-            placeholder={'name'}
-        />
-        <TextInput 
-            style={styles.ti}
-            value={pass}
-            onChangeText={usePass}
-            placeholder={'password'}
-            secureTextEntry={true}
-        />
-        <Button
-            
-            title={'confirme'}
-            onPress={() => console.log(`button presed: {\nname: ${name},\n pass: ${pass}\n}`)}
-        />
-    </View>
+    return (
+      <View style={styles.container}  >
+          <TextInput 
+              style={styles.ti}
+              value={name}
+              onChangeText={useName}
+              placeholder={'name'}
+          />
+          <TextInput 
+              style={styles.ti}
+              value={pass}
+              onChangeText={usePass}
+              placeholder={'password'}
+              secureTextEntry
+          />
+          <Button
+              
+              title={'confirme'}
+              onPress={onPress}
+          />
+      </View>
   );
 }
 
