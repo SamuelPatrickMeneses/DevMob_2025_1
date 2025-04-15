@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "semana_03",
-    "slug": "semana_03",
+    "name": "semana_04",
+    "slug": "semana_04",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,14 +14,14 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.semana-03"
+      "bundleIdentifier": "com.anonymous.semana-04"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.semana_03"
+      "package": "com.anonymous.semana_04"
     },
     "web": {
       "favicon": "./assets/favicon.png"
