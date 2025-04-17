@@ -1,11 +1,19 @@
 import {StatusBar, StyleSheet, View } from 'react-native';
-import ResetPassword from './components/ResetPassword';
+import {Link} from 'expo-router';
+import { Stack} from 'expo-router';
+
 
 export default function App() {
 
   return (
     <View style={styles.container}  >
-        <ResetPassword/>
+        <Link href={{
+            pathname: '[id]',
+            params:{id: Math.floor(Math.random()*10)} 
+        }} style={styles.text}>
+            show id
+        </Link>
+        <Stack.Screen options={{title:'Home'}}/>
         <StatusBar 
             animated={true}
             hidden={false}
@@ -23,5 +31,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  text: {
+    fontSize: 40
   }
 });

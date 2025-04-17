@@ -1,5 +1,6 @@
 {
-  "expo": {
+  "expo": {   
+    "scheme": "myapp",
     "name": "semana_05",
     "slug": "semana_05",
     "version": "1.0.0",
