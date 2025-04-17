@@ -7,10 +7,12 @@ export default function App() {
 
   return (
     <View style={styles.container}  >
-        <Link href={{
-            pathname: '[id]',
-            params:{id: Math.floor(Math.random()*10)} 
-        }} style={styles.text}>
+        <Link 
+            href={{
+                pathname: '[id]',
+                params:{id: Math.floor(Math.random()*10)} 
+            }} style={styles.text}
+        >
             show id
         </Link>
         <Stack.Screen options={{title:'Home'}}/>
